@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>lab#1 web</title>
+</head>
+
+<body>
+    <h1>Проєктування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Виконав студент групи КН-32 Довгий А.О.</h2>
+    <h3>Варіант №6</h3>
+    <a href="index.html">На головну</a>
+
+    <h3>Робота з формами</h3>
+
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення товару до інтернет-магазину</p>
+    <p>Необхідно заповнити  наступні данні:</p>
+    <ul>
+        <li>дані про товар, включають назву товару, тип товару(вибирається зі списку), опис, поточну ціну, ціну зі знижкою;</li>
+        <li>дані про виробника, включають назву,  електрону пошту, посилання на веб-сайт, коментарі.</li>
+    </ul>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Введення товару до інтернет-магазину</legend>
+            <fieldset>
+                <legend>Дані про товар</legend>
+
+                <label for="name">Назва товару:</label>
+                <input type="text" id="pr_name" name="product_name" required><br><br>
+
+                <label for="type">Тип товару:</label>
+                <select id="pr_type" name="type" required>
+                    <option value="electronics">Електроніка</option>
+                    <option value="clothing">Одяг та взуття</option>
+                    <option value="home">Дім та сад</option>
+                    <option value="other">Інше</option>
+                </select><br><br>
+
+                <label for="description">Опис:</label><br>
+                <textarea id="pr_description" name="description" rows="4"></textarea><br><br>
+
+                <label for="current_price">Поточна ціна:</label>
+                <input type="number" id="current_price" name="current_price" step="1" min="0" required><br><br>
+
+                <label for="discount_price">Ціна зі знижкою:</label>
+                <input type="number" id="discount_price" name="discount_price" step="0.01" min="0"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Дані про виробника</legend>
+
+                <label for="mnf_name">Назва виробника:</label>
+                <input type="text" id="mnf_name" name="name" required><br><br>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="mnf_email" name="email"><br><br>
+
+                <label for="website">Посилання на веб-сайт:</label>
+                <input type="url" id="mnf_website" name="website"><br><br>
+
+                <label for="comments">Коментарі:</label><br>
+                <textarea id="comments" name="comments" rows="3"></textarea><br><br>
+            </fieldset>
+
+            <br>
+            <button type="submit">Відправити</button>
+        </fieldset>
+    </form>
+</body>
+</html>

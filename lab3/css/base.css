@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+    --color-bg-main: #09090B; /* Найтемніший фон сторінки */
+    --color-header-menu: #18181B; /* Фон для заголовку та меню */
+    --color-content: #1E1E24; /* Фон основного вмісту */
+    --color-sidebar: #2D2D35; /* Фон додаткової секції */
+    --color-accent: #10B981; /* Смарагдовий акцент для кнопок */
+    --color-text-main: #E4E4E7; /* Основний світлий текст */
+    --color-text-muted: #A1A1AA; /* Приглушений текст */
+   
+    --font-family-main: "Inter", sans-serif;
+    --font-size-h1: 36px;
+    --font-size-h2: 24px;
+    --font-size-menu: 16px;
+    --font-size-p: 15px;
+    
+    --width: 1440px;
+    --width-sidebar: 440px;
+    --width-main: 1000px;
+    --heigth-menu: 100px;
+    --heigth-header: 250px;
+    --heigth-footer: 70px;
+    
+    --padding-left: 120px;
+    --padding-text: 50px;
+}

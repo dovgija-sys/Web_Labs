@@ -1,0 +1,13 @@
+.footer {
+    height: var(--heigth-footer);
+    clear: both; 
+    background-color: var(--color-bg-main); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .footer p {
+        color: var(--color-text-muted);
+        font-size: 12px;
+    }
