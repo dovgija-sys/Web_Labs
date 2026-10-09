@@ -1,0 +1,15 @@
+.header {
+    height: 120px;
+    background-color: var(--color-header-menu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #2B2B30;
+
+}
+
+.header_h1 {
+    color: #FFFFFF;
+    font-size: var(--font-size-h1);
+    font-weight: bold;
+}

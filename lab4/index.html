@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevGuard API - Програмний продукт</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 class="header_h1">DevGuard API</h1>
+        </header>
+
+        <nav class="menu" aria-label="Головна навігація">
+            <ul>
+                <li><a href="#description">ОПИС РОЗРОБКИ</a></li>
+                <li><a href="#download">ЗАВАНТАЖЕННЯ</a></li>
+                <li><a href="#contacts">КОНТАКТИ АВТОРА</a></li>
+                <li><a href="#feedback">ЗВОРОТНИЙ ЗВ'ЯЗОК</a></li>
+            </ul>
+        </nav>
+
+        <aside class="sidebar" aria-label="Інформація про продукт">
+            <h2 class="sidebar_version">Версія 2.0.4</h2>
+            <p class="sidebar_date">Останнє оновлення: 28 Вересня</p>
+            <button class="sidebar_btn" type="button">Завантажити зараз</button>
+            <div class="sidebar_links">
+                <a href="#">Документація</a>
+                <a href="#">Ліцензія</a>
+            </div>
+        </aside>
+
+        <main class="content">
+
+            <section class="section" id="description">
+                <h2>Опис розробки</h2>
+                <p>Програмний продукт побудовано на базі сучасних веб-технологій. Основне ядро обробляє запити з мінімальною затримкою, використовуючи оптимізовані контролери та сервіси інтеграції.</p>
+                <pre class="code_block"><code>public void ConfigureServices(IServiceCollection services)
+{
+    services.AddSecurityCore();
+}</code></pre>
+            </section>
+
+            <hr class="separator">
+            <section class="section" id="download">
+                <h2>Завантаження</h2>
+                <div class="gallery-grid">
+                    <figure class="media-card">
+                        <img src="img/dashboard.jpg" alt="Панель керування DevGuard API">
+                        <figcaption>Панель керування безпекою API</figcaption>
+                    </figure>
+                    <figure class="media-card">
+                        <img src="img/code.jpg" alt="Редактор коду">
+                        <figcaption>Приклад інтеграції в код проєкту</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="section" id="metrics">
+                <h2>Статистика та метрики</h2>
+                <p>Демонстраційні цільові показники DevGuard API.</p>
+                <dl class="metrics-grid">
+                    <div class="metric-card"><dt>Цільова доступність</dt><dd>99,9%</dd></div>
+                    <div class="metric-card"><dt>Час відповіді</dt><dd>&lt; 50 мс</dd></div>
+                    <div class="metric-card"><dt>Рівні захисту</dt><dd>3</dd></div>
+                    <div class="metric-card"><dt>Моніторинг</dt><dd>24/7</dd></div>
+                </dl>
+            </section>
+
+            <hr class="separator">
+
+            <section class="section" id="news">
+                <h2>Останні оновлення</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <time datetime="2026-09-28">28 вересня 2026</time>
+                        <h3>DevGuard API 2.0.4</h3>
+                        <p>Оновлено панель керування та покращено обробку запитів.</p>
+                    </article>
+                    <article class="news-card">
+                        <time datetime="2026-09-12">12 вересня 2026</time>
+                        <h3>Посилення захисту</h3>
+                        <p>Додано перевірку параметрів і зрозуміліші повідомлення про помилки.</p>
+                    </article>
+                    <article class="news-card">
+                        <time datetime="2026-09-01">1 вересня 2026</time>
+                        <h3>Посібник з інтеграції</h3>
+                        <p>Підготовлено короткий приклад підключення сервісу до проєкту.</p>
+                    </article>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="section" id="guide">
+                <h2>Довідка DevGuard API</h2>
+                <fieldset class="tabs">
+                    <legend class="tab-legend">Розділи довідки</legend>
+                    <input class="tab-input" id="tab-overview" type="radio" name="guide-tab" checked>
+                    <label class="tab-button" for="tab-overview">Опис</label>
+                    <input class="tab-input" id="tab-features" type="radio" name="guide-tab">
+                    <label class="tab-button" for="tab-features">Можливості</label>
+                    <input class="tab-input" id="tab-start" type="radio" name="guide-tab">
+                    <label class="tab-button" for="tab-start">Інструкція</label>
+                    <section class="tab-panel" id="panel-overview" aria-labelledby="tab-overview">
+                        <p>DevGuard API — демонстраційний сервіс для інтеграції перевірок безпеки у вебзастосунки.</p>
+                    </section>
+                    <section class="tab-panel" id="panel-features" aria-labelledby="tab-features">
+                        <ul><li>Перевірка вхідних запитів.</li><li>Централізоване налаштування захисту.</li><li>Журналювання подій API.</li></ul>
+                    </section>
+                    <section class="tab-panel" id="panel-start" aria-labelledby="tab-start">
+                        <p>Додайте <code>AddSecurityCore()</code> до конфігурації сервісів, налаштуйте параметри та перевірте інтеграцію тестовим запитом.</p>
+                    </section>
+                </fieldset>
+            </section>
+
+            <hr class="separator">
+
+            <section class="section contacts" id="contacts">
+                <h2>Контакти автора</h2>
+                <div class="contact_info">
+                    <img src="img/avatar.svg" alt="Аватар розробника" class="avatar">
+                    <address class="details">
+                        <p><strong>Розробник:</strong> Містер Х</p>
+                        <p><strong>Email:</strong> developer@gmail.com</p>
+                        <p><strong>GitHub:</strong> github.com/mister_x13</p>
+                        <p><strong>Telegram:</strong> @dev_contact</p>
+                    </address>
+                </div>
+            </section>
+
+            <hr class="separator">
+
+            <section class="section feedback" id="feedback">
+                <h2>Зворотний зв'язок</h2>
+                <p>Заповніть форму — відкриється ваш поштовий застосунок із підготовленим повідомленням.</p>
+                <form class="feedback-form" action="mailto:developer@gmail.com" method="post" enctype="text/plain">
+                    <label for="request-name">Ім'я</label>
+                    <input id="request-name" name="Ім'я" type="text" autocomplete="name" required>
+                    <label for="request-email">Електронна пошта</label>
+                    <input id="request-email" name="Email" type="email" autocomplete="email" required>
+                    <label for="request-message">Повідомлення</label>
+                    <textarea id="request-message" name="Повідомлення" rows="4" required></textarea>
+                    <button class="feedback_btn" type="submit">Підготувати повідомлення</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026. Розроблено для інженерів програмного забезпечення.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
