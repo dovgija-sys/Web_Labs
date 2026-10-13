@@ -27,11 +27,16 @@ a {
     font-style: italic;
     text-decoration: underline;
 }
-
 .p-var5-2 {
+    color: #ffffff;
     font-weight: bold;
+}
+.sentenсe {
+    color: #000000 !important;
+    font-style: italic;
 }
 
 .sentence-blue {
     color: #00FFFF;
 }
+
