@@ -1,5 +1,6 @@
 .footer {
     height: var(--heigth-footer);
+    width: 50%;
     clear: both; 
     background-color: var(--color-bg-main); 
     display: flex;

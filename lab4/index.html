@@ -31,6 +31,19 @@
                 <a href="#">Документація</a>
                 <a href="#">Ліцензія</a>
             </div>
+            <section class="section feedback" id="feedback">
+                <h2>Зворотний зв'язок</h2>
+                <p>Заповніть форму — відкриється ваш поштовий застосунок із підготовленим повідомленням.</p>
+                <form class="feedback-form" action="mailto:developer@gmail.com" method="post" enctype="text/plain">
+                    <label for="request-name">Ім'я</label>
+                    <input id="request-name" name="Ім'я" type="text" autocomplete="name" required>
+                    <label for="request-email">Електронна пошта</label>
+                    <input id="request-email" name="Email" type="email" autocomplete="email" required>
+                    <label for="request-message">Повідомлення</label>
+                    <textarea id="request-message" name="Повідомлення" rows="4" required></textarea>
+                    <button class="feedback_btn" type="submit">Підготувати повідомлення</button>
+                </form>
+            </section>
         </aside>
 
         <main class="content">
@@ -136,19 +149,7 @@
 
             <hr class="separator">
 
-            <section class="section feedback" id="feedback">
-                <h2>Зворотний зв'язок</h2>
-                <p>Заповніть форму — відкриється ваш поштовий застосунок із підготовленим повідомленням.</p>
-                <form class="feedback-form" action="mailto:developer@gmail.com" method="post" enctype="text/plain">
-                    <label for="request-name">Ім'я</label>
-                    <input id="request-name" name="Ім'я" type="text" autocomplete="name" required>
-                    <label for="request-email">Електронна пошта</label>
-                    <input id="request-email" name="Email" type="email" autocomplete="email" required>
-                    <label for="request-message">Повідомлення</label>
-                    <textarea id="request-message" name="Повідомлення" rows="4" required></textarea>
-                    <button class="feedback_btn" type="submit">Підготувати повідомлення</button>
-                </form>
-            </section>
+            
 
         </main>
 

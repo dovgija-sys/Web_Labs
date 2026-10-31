@@ -1,0 +1,21 @@
+.forms-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: min(100% - 32px, 1080px);
+  margin: 0 auto;
+}
+
+.forms-row app-field-form,
+.forms-row app-potato-field-form {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .forms-row {
+    width: 100%;
+    gap: 0;
+  }
+}

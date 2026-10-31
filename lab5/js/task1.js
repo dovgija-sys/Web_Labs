@@ -40,10 +40,13 @@ for (let i = 0; i < topics.length; i++) {
 	let status;
 	if (daysToStart > 0) {
 		status = `До початку залишилося днів: ${daysToStart}.`;
+		exhibition.style.backgroundColor = "khaki";
 	} else if (daysToClose > 0) {
-		status = "Виставка проводиться сьогодні.";
+		status = `Виставка проводиться сьогодні. Зікінчиться через днів: ${daysToClose}.`;
+		exhibition.style.backgroundColor = "lightgreen";
 	} else {
 		status = "Виставка вже завершилася.";
+		exhibition.style.backgroundColor = "lightgray";
 	}
 
 	const organizer = organizers[i] || "Організатора не вказано.";

@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Робота з класами</h2>
+
+  <form [formGroup]="form" (ngSubmit)="calculate()">
+    <label>Назва поля</label>
+    <input formControlName="name" type="text" placeholder="Наприклад: Північне">
+    @if (form.controls.name.touched && form.controls.name.invalid) {
+      <div class="error">Введіть назву (мінімум 2 символи)</div>
+    }
+
+    <label>r — вага насіння на одиницю площі</label>
+    <input formControlName="r" type="number" step="any">
+    @if (form.controls.r.touched && form.controls.r.invalid) {
+      <div class="error">Введіть число більше 0</div>
+    }
+
+    <label>k — коефіцієнт</label>
+    <input formControlName="k" type="number" step="any">
+    @if (form.controls.k.touched && form.controls.k.invalid) {
+      <div class="error">Введіть число більше 0</div>
+    }
+
+    <label>S - площа поля</label>
+    <input formControlName="S" type="number" step="any">
+    @if (form.controls.S.touched && form.controls.S.invalid) {
+      <div class="error">Введіть число більше 0</div>
+    }
+
+    <button type="submit">Розрахувати</button>
+  </form>
+
+  @if (baseYield !== null) {
+    <div class="result">
+      <p>Урожай з одиниці площі (клас «Поле»): <b>{{ baseYield }}</b></p>
+      <p>Урожай з усієї площі (клас «Картопляне Поле»): <b>{{ totalYield }}</b></p>
+    </div>
+  }
+</div>
