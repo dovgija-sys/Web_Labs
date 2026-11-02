@@ -13,9 +13,22 @@
   min-width: 0;
 }
 
+.overall-result {
+  width: min(100% - 32px, 1080px);
+  margin: 20px auto;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #e8f5e9;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .forms-row {
     width: 100%;
     gap: 0;
+  }
+
+  .overall-result {
+    width: 100%;
   }
 }

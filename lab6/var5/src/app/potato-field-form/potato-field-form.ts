@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Field } from '../class/field';
 import { PotatoField } from '../class/potato-field';
@@ -10,6 +10,8 @@ import { PotatoField } from '../class/potato-field';
   templateUrl: './potato-field-form.html',
 })
 export class PotatoFieldForm {
+  yieldCalculated = output<number>();
+
   private fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
@@ -33,5 +35,6 @@ export class PotatoFieldForm {
 
     this.baseYield = field.getYield();
     this.totalYield = potatoField.getYield();
+    this.yieldCalculated.emit(this.totalYield);
   }
 }

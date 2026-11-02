@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Field } from '../class/field';
 
@@ -9,6 +9,8 @@ import { Field } from '../class/field';
   templateUrl: './field-form.html',
 })
 export class FieldForm {
+  yieldCalculated = output<number>();
+
   private fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
@@ -24,9 +26,10 @@ export class FieldForm {
       return;
     }
 
-    const { name, r, k, } = this.form.getRawValue();
+    const { name, r, k } = this.form.getRawValue();
     const field = new Field(name, r, k);
 
     this.baseYield = field.getYield();
+    this.yieldCalculated.emit(this.baseYield);
   }
 }
