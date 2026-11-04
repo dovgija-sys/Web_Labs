@@ -1,0 +1,14 @@
+:root { --bg:#f5f6fa; --card:#fff; --text:#1f2430; --accent:#2f5bea; --border:#dfe3ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14161c; --card:#1e222b; --text:#e7e9ef; --accent:#7b9bff; --border:#2f3542; }
+  }
+  body { font-family: Arial, sans-serif; background:var(--bg); color:var(--text); margin:0; padding:20px; }
+  .wrap { max-width:900px; margin:0 auto; }
+  header, .task, .faculty { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin-bottom:16px; }
+  header h1 { margin:0 0 8px; font-size:20px; }
+  header p { margin:2px 0; }
+  .faculty h2 { margin-top:0; color:var(--accent); font-size:18px; }
+  ul { margin:0; padding-left:20px; }
+  li { padding:4px 0; }
+  .head { opacity:.7; font-size:14px; }
+  .error { color:#d33; }
