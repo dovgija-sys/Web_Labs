@@ -1,22 +1,10 @@
 import { Component } from '@angular/core';
-import { Header } from './header/header';
-import { FieldForm } from './field-form/field-form';
-import { PotatoFieldForm } from './potato-field-form/potato-field-form';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [Header, FieldForm, PotatoFieldForm],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   selector: 'app-root',
-  styleUrl: './app.css',
+  styleUrl: './app-shell.css',
   templateUrl: './app.html',
 })
-export class App {
-  private fieldYield: number | null = null;
-  private potatoFieldYield: number | null = null;
-  sumYield: number | null = null;
-
-  calculateSumYield(baseYield: number | null, totalYield: number | null): void {
-    this.sumYield = baseYield === null || totalYield === null ? null : baseYield + totalYield;
-  }
-
-  
-}
+export class App {}

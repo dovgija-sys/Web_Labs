@@ -1,0 +1,11 @@
+<app-header></app-header>
+<main class="forms-row">
+  <app-field-form (yieldCalculated)="setFieldYield($event)"></app-field-form>
+  <app-potato-field-form (yieldCalculated)="setPotatoFieldYield($event)"></app-potato-field-form>
+</main>
+
+@if (sumYield !== null) {
+  <section class="overall-result">
+    <p>Загальний урожай (Field + PotatoField): <b>{{ sumYield }}</b></p>
+  </section>
+}

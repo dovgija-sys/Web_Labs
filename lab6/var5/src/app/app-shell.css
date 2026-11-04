@@ -1,0 +1,27 @@
+.lab-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #2e7d32;
+}
+
+.lab-navigation a {
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.lab-navigation a:hover,
+.lab-navigation a.active {
+  background: #1b5e20;
+}
+
+@media (max-width: 600px) {
+  .lab-navigation {
+    flex-direction: column;
+    text-align: center;
+  }
+}

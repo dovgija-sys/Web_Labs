@@ -1,0 +1,123 @@
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.section-heading > p:last-child {
+  line-height: 1.5;
+}
+
+.eyebrow {
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+input.ng-invalid.ng-touched,
+input[aria-invalid="true"] {
+  border: 1px solid red;
+}
+
+.hint {
+  margin: 4px 0;
+  color: #555;
+  font-size: 13px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 12px;
+  background: #e8f5e9;
+}
+
+.result > h3 {
+  margin-top: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+caption {
+  padding: 0 0 8px;
+  text-align: left;
+}
+
+th,
+td {
+  min-width: 36px;
+  padding: 8px 10px;
+  border: 1px solid #c8e6c9;
+  text-align: center;
+}
+
+th {
+  background: #e8f5e9;
+}
+
+.multiples {
+  margin-top: 20px;
+}
+
+.multiples h3 {
+  margin-bottom: 8px;
+}
+
+.multiples ul,
+.multiples p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.multiples ul {
+  padding-left: 22px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 12px;
+  }
+}

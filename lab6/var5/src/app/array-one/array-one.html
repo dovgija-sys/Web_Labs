@@ -1,0 +1,45 @@
+<section class="container">
+  <div class="section-heading">
+    <p class="eyebrow">Завдання 1</p>
+    <h2>Одновимірний масив</h2>
+    <p>Згенеруйте масив випадкових цілих чисел від 1 до 10 та отримайте подвоєні значення.</p>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="generate()" novalidate>
+    <label for="array-length">Кількість елементів (1–100)</label>
+    <input
+      id="array-length"
+      type="number"
+      formControlName="length"
+      min="1"
+      max="100"
+      step="1"
+      required
+      [attr.aria-invalid]="lengthControl.invalid && lengthControl.touched"
+      aria-describedby="length-hint length-error"
+    >
+    <p id="length-hint" class="hint">Введіть ціле число від 1 до 100.</p>
+    @if (lengthControl.invalid && lengthControl.touched) {
+      <p id="length-error" class="error" role="alert">
+        @if (lengthControl.hasError('required')) {
+          Вкажіть кількість елементів.
+        } @else if (lengthControl.hasError('min')) {
+          Мінімальна кількість елементів — 1.
+        } @else if (lengthControl.hasError('max')) {
+          Максимальна кількість елементів — 100.
+        } @else {
+          Кількість має бути цілим числом.
+        }
+      </p>
+    }
+    <button type="submit" [disabled]="form.invalid">Згенерувати</button>
+  </form>
+
+  @if (result; as generatedArray) {
+    <section class="result" aria-live="polite">
+      <h3>Результат</h3>
+      <p>Вихідний масив: <b>{{ generatedArray.values.join(', ') }}</b></p>
+      <p>Елементи, помножені на 2: <b>{{ generatedArray.values_multiple_2.join(', ') }}</b></p>
+    </section>
+  }
+</section>

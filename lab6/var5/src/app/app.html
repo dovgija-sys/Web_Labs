@@ -1,11 +1,15 @@
-<app-header></app-header>
-<main class="forms-row">
-  <app-field-form (yieldCalculated)="setFieldYield($event)"></app-field-form>
-  <app-potato-field-form (yieldCalculated)="setPotatoFieldYield($event)"></app-potato-field-form>
-</main>
+<nav class="lab-navigation" aria-label="Навігація між лабораторними роботами">
+  <a routerLink="/lab6" routerLinkActive="active" ariaCurrentWhenActive="page">
+    Лабораторна робота №6
+  </a>
+  <a routerLink="/array-one" routerLinkActive="active" ariaCurrentWhenActive="page">
+    Одновимірний масив
+  </a>
+  <a routerLink="/array-two" routerLinkActive="active" ariaCurrentWhenActive="page">
+    Двовимірний масив
+  </a>
+</nav>
 
-@if (sumYield !== null) {
-  <section class="overall-result">
-    <p>Загальний урожай (Field + PotatoField): <b>{{ sumYield }}</b></p>
-  </section>
-}
+<main>
+  <router-outlet></router-outlet>
+</main>
