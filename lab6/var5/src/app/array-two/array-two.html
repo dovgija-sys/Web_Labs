@@ -96,11 +96,12 @@
           <ul>
             @for (value of generatedArray.multiples_of_5; track $index) {
               <li>
-                {{ value }} — рядок {{ generatedArray.indexesI[$index] + 1 }},
-                стовпець {{ generatedArray.indexesJ[$index] + 1 }}
+                {{ value }} — рядок {{ generatedArray.indexesI[$index]}},
+                стовпець {{ generatedArray.indexesJ[$index]}}
               </li>
             }
           </ul>
+          <p>Сума елементів, менших за 10: {{ generatedArray.sum }}</p>
         } @else {
           <p>У цій матриці немає елементів, кратних 5.</p>
         }

@@ -5,6 +5,7 @@ export class ArrayTwo {
     multiples_of_5: number[] = [];
     indexesI: number[] = [];
     indexesJ: number[] = [];
+    sum: number = 0;
 
     constructor() {
         this.values = [];
@@ -24,6 +25,9 @@ export class ArrayTwo {
                     this.multiples_of_5.push(this.values[i][j]);
                     this.indexesI.push(i);
                     this.indexesJ.push(j);
+                }
+                if(this.values[i][j] < 10){
+                    this.sum += this.values[i][j];
                 }
             }
         }

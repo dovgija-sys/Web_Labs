@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <rect width="700" height="300" rx="14" fill="#f3f6f1"/>
+  <rect width="130" height="300" rx="14" fill="#203c30"/>
+  <circle cx="28" cy="28" r="10" fill="#c8e88a"/><rect x="48" y="21" width="56" height="13" rx="6" fill="#eaf1e9"/>
+  <g fill="#819389"><rect x="29" y="78" width="70" height="7" rx="3"/><rect x="29" y="109" width="80" height="7" rx="3"/><rect x="29" y="140" width="60" height="7" rx="3"/><rect x="29" y="171" width="73" height="7" rx="3"/></g>
+  <text x="158" y="43" fill="#203c30" font-family="Arial,sans-serif" font-size="18" font-weight="700">Результати команди</text>
+  <text x="158" y="64" fill="#829087" font-family="Arial,sans-serif" font-size="11">Звіт за останні 30 днів</text>
+  <rect x="158" y="83" width="310" height="195" rx="9" fill="#fff"/><rect x="483" y="83" width="189" height="195" rx="9" fill="#fff"/>
+  <text x="177" y="106" fill="#203c30" font-family="Arial,sans-serif" font-size="12" font-weight="700">Виконані завдання</text>
+  <g stroke="#edf0eb" stroke-width="1"><path d="M180 133h265M180 164h265M180 195h265M180 226h265M180 257h265"/></g>
+  <g fill="#9dbb7c"><rect x="195" y="203" width="24" height="54" rx="4"/><rect x="233" y="181" width="24" height="76" rx="4"/><rect x="271" y="193" width="24" height="64" rx="4"/><rect x="309" y="158" width="24" height="99" rx="4"/><rect x="347" y="143" width="24" height="114" rx="4"/><rect x="385" y="126" width="24" height="131" rx="4"/></g>
+  <text x="177" y="272" fill="#829087" font-family="Arial,sans-serif" font-size="9">1 трав.</text><text x="398" y="272" fill="#829087" font-family="Arial,sans-serif" font-size="9">30 трав.</text>
+  <text x="502" y="109" fill="#203c30" font-family="Arial,sans-serif" font-size="12" font-weight="700">Загальний прогрес</text>
+  <circle cx="577" cy="178" r="46" fill="none" stroke="#e8eee4" stroke-width="12"/><circle cx="577" cy="178" r="46" fill="none" stroke="#8eaf69" stroke-width="12" stroke-dasharray="218 289" stroke-linecap="round" transform="rotate(-90 577 178)"/>
+  <text x="552" y="184" fill="#203c30" font-family="Arial,sans-serif" font-size="22" font-weight="700">76%</text>
+  <text x="532" y="245" fill="#829087" font-family="Arial,sans-serif" font-size="10">план виконано</text>
+</svg>

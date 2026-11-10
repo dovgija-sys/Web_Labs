@@ -1,0 +1,56 @@
+{
+  "title": "Forma — простір для роботи",
+  "about": "Зручний інструмент для планування проєктів, керування завданнями та спільної роботи команди.",
+  "menu": [
+    { "label": "Про програму", "href": "#about" },
+    { "label": "Можливості", "href": "#features" },
+    { "label": "Галерея", "href": "#gallery" }
+  ],
+  "slides": [
+    {
+      "id": "overview",
+      "image": "./Image/overview.svg",
+      "alt": "Головна панель програми Forma",
+      "caption": "Огляд проєкту"
+    },
+    {
+      "id": "tasks",
+      "image": "./Image/tasks.svg",
+      "alt": "Список завдань у програмі Forma",
+      "caption": "Завдання та терміни"
+    },
+    {
+      "id": "reports",
+      "image": "./Image/reports.svg",
+      "alt": "Звіт про перебіг проєкту в програмі Forma",
+      "caption": "Результати команди"
+    }
+  ],
+  "features": [
+    {
+      "id": "planning",
+      "title": "Планування проєктів",
+      "description": "Об'єднуйте етапи й завдання у зручний план."
+    },
+    {
+      "id": "teamwork",
+      "title": "Командна робота",
+      "description": "Діліться новинами та зберігайте важливі обговорення."
+    },
+    {
+      "id": "schedule",
+      "title": "Терміни й завдання",
+      "description": "Призначайте виконавців і стежте за термінами."
+    },
+    {
+      "id": "reports",
+      "title": "Звіти",
+      "description": "Переглядайте перебіг проєкту в одному місці."
+    }
+  ],
+  "contact": {
+    "author": "Автор проєкту",
+    "email": "hello@forma.example",
+    "github": "https://github.com/"
+  }
+}

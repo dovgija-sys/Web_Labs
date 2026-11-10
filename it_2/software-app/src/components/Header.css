@@ -1,0 +1,112 @@
+.header-top {
+  align-items: center;
+  background: var(--dark);
+  border-radius: 12px 12px 0 0;
+  color: #fff;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+.header-label {
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.header-top h1 {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  margin: 0;
+}
+
+.header-about {
+  color: #d0dad3;
+  line-height: 1.6;
+  margin: 12px 0 0;
+  max-width: 520px;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider img {
+  background: #fff;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.slider p {
+  color: #e4ecdf;
+  font-size: 0.85rem;
+  margin: 8px 0;
+}
+
+.slider-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.slider-buttons button {
+  background: #83948a;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 9px;
+  padding: 0;
+  width: 9px;
+}
+
+.slider-buttons button.selected {
+  background: var(--accent);
+}
+
+.navigation {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e1e7e2;
+  border-top: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.navigation > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.navigation a {
+  color: var(--green);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.navigation a:hover {
+  color: #a17426;
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .header-top {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .navigation > div {
+    gap: 12px 18px;
+  }
+}
